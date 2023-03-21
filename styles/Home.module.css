@@ -313,7 +313,7 @@
 }
 
 /* Less than 640 px */
-@media (max-width: 640px) {
+@media (max-width: 340px) {
   .gradient {
     margin-top: 256px;
   }

@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import tokenomics from "./tokenomics";
+
 
 import { MARKETPLACE_ADDRESS } from "../const/contractAddresses";
 import {
@@ -52,10 +52,10 @@ const Home: NextPage = () => {
             <div className={styles.heroBody}>
               <h1 className={styles.heroTitle}>
                 <span className={styles.heroTitleGradient}>
-                  Meba NFT Marketplace
+                  Melo Inu 
                 </span>
                 <br />
-                faster than ever.
+                
               </h1>
               <p className={styles.heroSubtitle}>
                 <Link
@@ -63,9 +63,9 @@ const Home: NextPage = () => {
                   href="https://meloinu.netlify.app"
                   target="_blank"
                 >
-                  Meba
+                  Melo Inu
                 </Link>{" "}
-                Is the first NFT Marketplace On Shibarium powered by thirdweb SDK <b>Fast</b>, <i>& Reliably</i>.
+                 <b></b> <i></i>.
               </p>
 
               <div className={styles.heroCtaContainer}>
@@ -74,10 +74,10 @@ const Home: NextPage = () => {
                 </Link>
                 <Link
                   className={styles.secondaryCta}
-                  href="https://meloinu.netlify.app"
+                  href="/dashboard"
                   target="_blank"
                 >
-                  Melo Inu | Home
+                  Dashboard | Home
                 </Link>
               </div>
               <div className="main">
