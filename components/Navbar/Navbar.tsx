@@ -24,15 +24,31 @@ export function Navbar() {
           </Link>
 
           <div className={styles.navMiddle}>
+          <Link href="/dashboard" className={styles.link}>
+              DashBoard
+            </Link>
+          <Link href="/roadmap" className={styles.link}>
+              RoadMap
+            </Link>
+          <Link href="/chart" className={styles.link}>
+              Charts
+            </Link>
+          <Link href="/tokenomics" className="">
+              Tokenomics
+            </Link>
+            <Link href="/music" className="">
+              Music
+            </Link>
             <Link href="/buy" className={styles.link}>
-              Buy
+              Buy NFTs
             </Link>
             <Link href="/sell" className={styles.link}>
-              Sell
+              Sell NFTs
             </Link>
             <Link href="/create" className={styles.link}>
               Create
             </Link>
+            
           </div>
         </div>
 

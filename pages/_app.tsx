@@ -7,7 +7,7 @@ import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ThirdwebProvider activeChain={NETWORK}>
+    <ThirdwebProvider activeChain="binance">
       {/* Progress bar when navigating between pages */}
       <NextNProgress
         color="var(--color-tertiary)"
