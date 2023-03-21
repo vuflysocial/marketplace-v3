@@ -3,11 +3,24 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
+import { MARKETPLACE_ADDRESS } from "../const/contractAddresses";
+import {
+  MediaRenderer,
+  useActiveListings,
+  useContract,
+} from "@thirdweb-dev/react";
+import { useRouter } from "next/router";
+
+
 /**
  * Landing page with a simple gradient background and a hero asset.
  * Free to customize as you see fit.
  */
 const Home: NextPage = () => {
+  
+  const router = useRouter();
+  const { contract: marketplace } = useContract(MARKETPLACE_ADDRESS, "marketplace");
+  const { data: listings, isLoading: loadingListings } = useActiveListings(marketplace);
   return (
     <div className={styles.container}>
       <div className={styles.content}>
@@ -38,7 +51,7 @@ const Home: NextPage = () => {
             <div className={styles.heroBody}>
               <h1 className={styles.heroTitle}>
                 <span className={styles.heroTitleGradient}>
-                  Build NFT Marketplaces
+                  Meba NFT Marketplace
                 </span>
                 <br />
                 faster than ever.
@@ -46,13 +59,12 @@ const Home: NextPage = () => {
               <p className={styles.heroSubtitle}>
                 <Link
                   className={styles.link}
-                  href="https://thirdweb.com"
+                  href="https://meloinu.netlify.app"
                   target="_blank"
                 >
-                  thirdweb
+                  Meba
                 </Link>{" "}
-                gives you the tools you need to create audited, performant, and
-                flexible NFT marketplaces in <b>hours</b>, <i>not months</i>.
+                Is the first NFT Marketplace On Shibarium powered by thirdweb SDK <b>Fast</b>, <i>& Reliably</i>.
               </p>
 
               <div className={styles.heroCtaContainer}>
@@ -61,17 +73,56 @@ const Home: NextPage = () => {
                 </Link>
                 <Link
                   className={styles.secondaryCta}
-                  href="https://github.com/thirdweb-example/marketplace-v3"
+                  href="https://meloinu.netlify.app"
                   target="_blank"
                 >
-                  GitHub
+                  Melo Inu | Home
                 </Link>
               </div>
+              <div className="main">
+          {
+            // If the listings are loading, show a loading message
+            loadingListings ? (
+              <div>Loading listings...</div>
+            ) : (
+              // Otherwise, show the listings
+              <div className={styles.listingGrid}>
+                {listings?.map((listing) => (
+                  <div
+                    key={listing.id}
+                    className={styles.listingShortView}
+                    onClick={() => router.push(`/listing/${listing.id}`)}
+                  >
+                    <MediaRenderer
+                      src={listing.asset.image}
+                      style={{
+                        borderRadius: 16,
+                        // Fit the image to the container
+                        width: "100%",
+                        height: "100%",
+                      }}
+                    />
+                    <h2 className={styles.nameContainer}>
+                      <Link href={`/listing/${listing.id}`} className={styles.name}>
+                        {listing.asset.name}
+                      </Link>
+                    </h2>
+
+                    <p>
+                      <b>{listing.buyoutCurrencyValuePerToken.displayValue}</b>{" "}
+                      {listing.buyoutCurrencyValuePerToken.symbol}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            )
+          }
+        </div>
+      </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
   );
 };
 
