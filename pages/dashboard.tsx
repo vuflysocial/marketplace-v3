@@ -29,6 +29,21 @@ function Dashboard() {
       <Link className={styles.heroCta} href="https://melo-inu.gitbook.io/whitepaper/">
         <div>WhitePaper V2</div>
       </Link>
+      <Link className={styles.heroCta} href="/tokenomics">
+        <div>Tokenomics</div>
+      </Link>
+      <Link className={styles.heroCta} href="/music">
+        <div>Music</div>
+      </Link>
+      <Link className={styles.heroCta} href="/buy">
+        <div>Buy NFTs</div>
+      </Link>
+      <Link className={styles.heroCta} href="/sell">
+        <div>Sell NFTs</div>
+      </Link>
+      <Link className={styles.heroCta} href="/create">
+        <div>Create</div>
+      </Link>
     </Container>
   )
 }
