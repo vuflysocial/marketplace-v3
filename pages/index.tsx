@@ -41,8 +41,8 @@ const Home: NextPage = () => {
           <div className={styles.heroAssetFrame}>
             <Image
               src="/hero-asset.png"
-              width={860}
-              height={540}
+              width={360}
+              height={340}
               alt="Hero asset, NFT marketplace"
               quality={100}
               className={styles.heroAsset}
@@ -63,7 +63,7 @@ const Home: NextPage = () => {
                   href="https://meloinu.netlify.app"
                   target="_blank"
                 >
-                  Melo Inu
+                  MelochiEdge
                 </Link>{" "}
                  <b></b> <i></i>.
               </p>
