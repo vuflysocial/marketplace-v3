@@ -7,12 +7,16 @@ function Music() {
     <Container maxWidth="lg">
       <div>
         <div>
-          <h3>Trending Melo Artists</h3>
+          <h3>Melos Favorite Artists</h3>
+        </div>
+
+        <div>
+          <p>VIBE</p>
         </div>
         <iframe
           width="560"
           height="315"
-          src="https://www.youtube.com/embed/VIDEO_ID"
+          src="https://www.youtube.com/embed/BIqeykm6l_Y"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
@@ -23,10 +27,13 @@ function Music() {
         </audio>
       </div>
       <br />
+      <div>
+        <p>DOTTY CA$H</p>
+      </div>
       <iframe
         width="560"
         height="315"
-        src="https://www.youtube.com/embed/VIDEO_ID"
+        src="https://www.youtube.com/embed/X3E_YmUNa90"
         title="YouTube video player"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen

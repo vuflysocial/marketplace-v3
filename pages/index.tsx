@@ -36,7 +36,11 @@ const Home: NextPage = () => {
                 quality={100}
                 className={styles.gradient}
               />
+              
             </div>
+            
+            
+
           </div>
           <div className={styles.heroAssetFrame}>
             <Image
@@ -78,6 +82,8 @@ const Home: NextPage = () => {
                 </Link>
               </div>
               <div className="main">
+
+                
           {
             // If the listings are loading, show a loading message
             loadingListings ? (
