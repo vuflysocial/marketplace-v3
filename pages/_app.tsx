@@ -4,11 +4,11 @@ import { Navbar } from "../components/Navbar/Navbar";
 import NextNProgress from "nextjs-progressbar";
 import { NETWORK } from "../const/contractAddresses";
 import "../styles/globals.css";
-import MelochiEdge from "@thirdweb-dev/chains"
+import BinanceTestnet from "@thirdweb-dev/chains"
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ThirdwebProvider activeChain="melochi">
+    <ThirdwebProvider activeChain="binance-testnet">
       {/* Progress bar when navigating between pages */}
       <NextNProgress
         color="var(--color-tertiary)"
