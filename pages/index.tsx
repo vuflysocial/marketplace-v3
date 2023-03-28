@@ -1,17 +1,15 @@
-import type { NextPage } from "next";
-import Link from "next/link";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
+import type { NextPage } from 'next';
+import Link from 'next/link';
+import Image from 'next/image';
+import styles from '../styles/Home.module.css';
 
-
-import { MARKETPLACE_ADDRESS } from "../const/contractAddresses";
+import { MARKETPLACE_ADDRESS } from '../const/contractAddresses';
 import {
   MediaRenderer,
   useActiveListings,
   useContract,
-} from "@thirdweb-dev/react";
-import { useRouter } from "next/router";
-
+} from '@thirdweb-dev/react';
+import { useRouter } from 'next/router';
 
 /**
  * Landing page with a simple gradient background and a hero asset.
@@ -20,7 +18,7 @@ import { useRouter } from "next/router";
 const Home: NextPage = () => {
   
   const router = useRouter();
-  const { contract: marketplace } = useContract(MARKETPLACE_ADDRESS, "marketplace");
+  const { contract: marketplace } = useContract(MARKETPLACE_ADDRESS, 'marketplace');
   const { data: listings, isLoading: loadingListings } = useActiveListings(marketplace);
   return (
     <div className={styles.container}>
@@ -29,25 +27,23 @@ const Home: NextPage = () => {
           <div className={styles.heroBackground}>
             <div className={styles.heroBackgroundInner}>
               <Image
-                src="/hero-gradient.png"
+                src='/hero-gradient.png'
                 width={1390}
                 height={1390}
-                alt="Background gradient from red to blue"
+                alt='Background gradient from red to blue'
                 quality={100}
                 className={styles.gradient}
               />
               
             </div>
             
-            
-
           </div>
           <div className={styles.heroAssetFrame}>
             <Image
-              src="/hero-asset.png"
+              src='/hero-asset.png'
               width={360}
               height={340}
-              alt="Hero asset, NFT marketplace"
+              alt='Hero asset, NFT marketplace'
               quality={100}
               className={styles.heroAsset}
             />
@@ -64,20 +60,20 @@ const Home: NextPage = () => {
               <p className={styles.heroSubtitle}>
                 <Link
                   className={styles.link}
-                  href="https://meloinu.netlify.app"
-                  target="_blank"
+                  href='https://meloinu.netlify.app'
+                  target='_blank'
                 >
                  What if
-                </Link>{" "}
-                 <b> the roles were reversed and Shiba Inu was a cat? Meet MELO INU, a clone of Shiba Inu, created with a twist – he's a cat!
+                </Link>{' '}
+                 <b> the roles were reversed and Shiba Inu was a cat? Meet MELO INU, a clone of Shiba Inu, created with a twist – he\'s a cat!
 
 The only difference between the two is the fact that they belong to two completely different breeds of animals. Our founder, Shittoshi, loves dogs just as much as the next person does. However, he noticed that a majority of homes around the world have both cats and dogs. So why just love dogs? Cats need love too.
 
-From that inception, the thought became clear that the only way to instill balance around the world would be to make sure that both cats and dogs run the world. So, Shittoshi did what any sane mad scientist would do to start this movement – he cloned Shiba Inu using the DNA strands of the code written by him. The particles and functions were merged to change Shiba's primal instinct just enough to have features of and resemble a Shiba tabby cat, whom he decided to name after his real-life tabby cat, Melo.
+From that inception, the thought became clear that the only way to instill balance around the world would be to make sure that both cats and dogs run the world. So, Shittoshi did what any sane mad scientist would do to start this movement – he cloned Shiba Inu using the DNA strands of the code written by him. The particles and functions were merged to change Shiba\'s primal instinct just enough to have features of and resemble a Shiba tabby cat, whom he decided to name after his real-life tabby cat, Melo.
 
 MELO INU was created to help bring back peace and balance by providing what we call a safe haven to the meme investing world through ecosystem building, charity, and utility. There are no fees associated with the MELO INU contract, and the liquidity has been locked away fo 8 months.</b> <i></i>.
               </p>
-
+            
               <div className={styles.heroCtaContainer}>
                 <Link
                   className={styles.secondaryCta}
@@ -137,3 +133,4 @@ MELO INU was created to help bring back peace and balance by providing what we c
 };
 
 export default Home;
+
