@@ -65,13 +65,7 @@ const Home: NextPage = () => {
                 >
                  What if
                 </Link>{' '}
-                 <b> the roles were reversed and Shiba Inu was a cat? Meet MELO INU, a clone of Shiba Inu, created with a twist – he\'s a cat!
-
-The only difference between the two is the fact that they belong to two completely different breeds of animals. Our founder, Shittoshi, loves dogs just as much as the next person does. However, he noticed that a majority of homes around the world have both cats and dogs. So why just love dogs? Cats need love too.
-
-From that inception, the thought became clear that the only way to instill balance around the world would be to make sure that both cats and dogs run the world. So, Shittoshi did what any sane mad scientist would do to start this movement – he cloned Shiba Inu using the DNA strands of the code written by him. The particles and functions were merged to change Shiba\'s primal instinct just enough to have features of and resemble a Shiba tabby cat, whom he decided to name after his real-life tabby cat, Melo.
-
-MELO INU was created to help bring back peace and balance by providing what we call a safe haven to the meme investing world through ecosystem building, charity, and utility. There are no fees associated with the MELO INU contract, and the liquidity has been locked away fo 8 months.</b> <i></i>.
+                 <b></b> <i></i>.
               </p>
             
               <div className={styles.heroCtaContainer}>
@@ -133,4 +127,3 @@ MELO INU was created to help bring back peace and balance by providing what we c
 };
 
 export default Home;
-
