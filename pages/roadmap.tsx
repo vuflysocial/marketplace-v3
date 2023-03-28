@@ -39,7 +39,7 @@ const Roadmap: NextPage = () => {
           <li>BNB chain launch</li>
           <li>Whitepaper/medium Release</li>
           <li>Contest/giveaways</li>
-          <li>Firt Phase of NFT Drops</li>
+          <li>First Phase of NFT Drops</li>
           <li>Community building</li>
           <li>Chat/twitter AMAs</li>
           <li>Merchandise Drop</li>
