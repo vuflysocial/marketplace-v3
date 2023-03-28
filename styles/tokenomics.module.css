@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+        padding-top: 50px;
+  }
+  
+  .text {
+    margin-top: 1000px;
+    text-align: center;
+  }
+  .progress {
+    width: 100%;
+    background-color: #e0e0de;
+    height: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .progressBar {
+    height: 10px;
+    border-radius: 5px;
+    background-color: #5cb85c;
+  }
+
+  .attentionContainer {
+    background-color: #333;
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+  }
+  
+  .attentionMessage {
+    color: white;
+    font-size: 1.2rem;
+  }
+  
+  
