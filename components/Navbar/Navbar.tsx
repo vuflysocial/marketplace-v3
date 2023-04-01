@@ -30,8 +30,8 @@ export function Navbar() {
           <Link href="/roadmap" className={styles.link}>
               RoadMap
             </Link>
-          <Link href="/chart" className={styles.link}>
-              Charts
+          <Link href="/Eco" className={styles.link}>
+              Eco
             </Link>
           <Link href="/tokenomics" className="">
               Tokenomics
