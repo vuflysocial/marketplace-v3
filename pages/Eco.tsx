@@ -1,18 +1,13 @@
 import { useState, useEffect } from 'react';
 import Container from '../components/Container/Container';
-import Post from './post';
+
 import NextLink from 'next/link';
 import Image from 'next/image'
 
-interface PostData {
-  id: number;
-  title: string;
-  content: string;
-  author: string;
-}
+
 
 function Eco() {
-  const [posts, setPosts] = useState<PostData[]>([]);
+  const [posts, setPosts] = useState<[]>([]);
 
   useEffect(() => {
     // Fetch posts from API or database and update state
@@ -27,9 +22,7 @@ function Eco() {
     
     <Container maxWidth="lg">
       <div><h1>Token Ecosytem</h1></div>
-      {posts.map(post => (
-        <Post key={post.id} title={post.title} content={post.content} author={post.author} />
-      ))}
+      
       <NextLink href="https://poocoin.app/tokens/0x5c12c812794b874fe4fdea9a4960df599c89b8e5">
         <div style={{ display: "flex", alignItems: "center" }}>
           <button style={{ marginRight: "10px" }}>Melo Inu</button>
@@ -37,9 +30,7 @@ function Eco() {
         </div>
       </NextLink>
       <br />
-      {posts.map(post => (
-        <Post key={post.id} title={post.title} content={post.content} author={post.author} />
-      ))}
+     
       <NextLink href="/">
         <div style={{ display: "flex", alignItems: "center" }}>
           <button style={{ marginRight: "10px" }}>Kami Shinto</button>
@@ -47,9 +38,7 @@ function Eco() {
         </div>
       </NextLink>
       <br />
-      {posts.map(post => (
-        <Post key={post.id} title={post.title} content={post.content} author={post.author} />
-      ))}
+     
       <NextLink href="/">
         <div style={{ display: "flex", alignItems: "center" }}>
           <button style={{ marginRight: "10px" }}>...</button>
@@ -57,9 +46,7 @@ function Eco() {
         </div>
       </NextLink>
       <br />
-      {posts.map(post => (
-        <Post key={post.id} title={post.title} content={post.content} author={post.author} />
-      ))}
+     
       <NextLink href="/">
         <div style={{ display: "flex", alignItems: "center" }}>
           <button style={{ marginRight: "10px" }}>...</button>
@@ -73,7 +60,7 @@ function Eco() {
   </button>
         <div>
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-    <Image src="/R.gif" alt="your-image-description" />
+    <img src="/R.gif" alt="your-image-description" />
   </div>
       
         </div>
@@ -82,7 +69,7 @@ function Eco() {
           
 
           <h1>The concept of kami is hard to explain.</h1>
-   <p>Shintoists would say that this is because human beings are simply incapable of forming a true understanding of the nature of kami. To make understanding easier kami are often described as divine beings, as spirits or gods. But kami are not much like the gods of other faiths:</p>
+    <p>Shintoists would say that this is because human beings are simply incapable of forming a true understanding of the nature of kami. To make understanding easier kami are often described as divine beings, as spirits or gods. But kami are not much like the gods of other faiths:</p>
     
 <h5>Kami are not divine like the transcendent and omnipotent deities found in many religions.</h5>
 <h5>Kami are not omnipotent.</h5>
