@@ -73,7 +73,7 @@ function Eco() {
   </button>
         <div>
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-    <img src="/R.gif" alt="your-image-description" />
+    <Image src="/R.gif" alt="your-image-description" />
   </div>
       
         </div>
