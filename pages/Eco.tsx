@@ -82,17 +82,18 @@ function Eco() {
           
 
           <h1>The concept of kami is hard to explain.</h1>
-    <p>Shintoists would say that this is because human beings are simply incapable of forming a true understanding of the nature of kami. To make understanding easier kami are often described as divine beings, as spirits or gods. But kami are not much like the gods of other faiths:</p>
+   <p>Shintoists would say that this is because human beings are simply incapable of forming a true understanding of the nature of kami. To make understanding easier kami are often described as divine beings, as spirits or gods. But kami are not much like the gods of other faiths:</p>
     
-      <h5>Kami are not divine like the transcendent and omnipotent deities found in many religions.</h5>
-      <h5>Kami are not omnipotent.</h5>
-      <h5>Kami are not perfect - they sometimes make mistakes and behave badly.</h5>
-      <h5>Kami are not inherently different in kind from human beings or nature - they are just a higher manifestation of the life energy... an extraordinary or awesome version.</h5>
-      <h5>Kami don't exist in a supernatural universe - they live in the same world as human beings and the world of nature. Kami include the gods that created the universe, but can also include:</h5>
-      <h5>The spirits that inhabit many living beings.</h5>
-      <h5>Some beings themselves.</h5>
-      <h5>Elements of the landscape, like mountains and lakes.</h5>
-      <h5>Powerful forces of nature, like storms and earthquakes.</h5>
+<h5>Kami are not divine like the transcendent and omnipotent deities found in many religions.</h5>
+<h5>Kami are not omnipotent.</h5>
+<h5>Kami are not perfect - they sometimes make mistakes and behave badly.</h5>
+<h5>Kami are not inherently different in kind from human beings or nature - they are just a higher manifestation of the life energy... an extraordinary or awesome version.</h5>
+<h5>Kami don&apos;t exist in a supernatural universe - they live in the same world as human beings and the world of nature. Kami include the gods that created the universe, but can also include:</h5>
+<h5>The spirits that inhabit many living beings.</h5>
+<h5>Some beings themselves.</h5>
+<h5>Elements of the landscape, like mountains and lakes.</h5>
+<h5>Powerful forces of nature, like storms and earthquakes.</h5>
+
         </div>
         <div>
           <br />
