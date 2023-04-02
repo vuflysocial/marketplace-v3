@@ -33,7 +33,7 @@ export function Navbar() {
           <Link href="/Eco" className={styles.link}>
               Eco
             </Link>
-          <Link href="/Melonomics" className="">
+          <Link href="/melonomics" className="">
               Melonomics
             </Link>
             <Link href="/music" className="">
