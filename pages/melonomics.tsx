@@ -2,11 +2,11 @@ import { NextPage } from "next";
 import styles from '../styles/tokenomics.module.css';
 import Container from "../components/Container/Container";
 
-function Tokenomics() {
+function melonomics() {
   return (
     <Container maxWidth="lg">
       <div>
-        <h1>Tokenomics</h1>
+        <h1>Melonomics</h1>
         <p>Welcome to our Tokenomics.</p>
         <h2>Token Information</h2>
         <ul>
@@ -27,10 +27,10 @@ function Tokenomics() {
         <h2>Token Usage</h2>
         <p>Melo Inu is The Main Token of the Ecosytem:</p>
         <ul>
-          <li>Payment for services within the Melo Inu ecosystem</li>
+          
           <li>Burning</li>
           <li>Staking</li>
-          <li>Staking</li>
+          <li>Rewards</li>
 
 
         </ul>
@@ -39,4 +39,5 @@ function Tokenomics() {
   );
 }
 
-export default Tokenomics;
+export default melonomics;
+
