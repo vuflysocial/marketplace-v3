@@ -33,21 +33,15 @@ export function Navbar() {
           <Link href="/Eco" className={styles.link}>
               Eco
             </Link>
-          <Link href="/tokenomics" className="">
-              Tokenomics
+          <Link href="/Melonomics" className="">
+              Melonomics
             </Link>
             <Link href="/music" className="">
               Music
             </Link>
-            <Link href="/buy" className={styles.link}>
-              Buy NFTs
-            </Link>
-            <Link href="/sell" className={styles.link}>
-              Sell NFTs
-            </Link>
-            <Link href="/create" className={styles.link}>
-              Create
-            </Link>
+            
+            
+            
             
           </div>
         </div>
