@@ -78,6 +78,28 @@ const Home: NextPage = () => {
                 </Link>
               </div>
               <div className="main">
+              <p className={styles.heroSubtitle}>
+                <Link
+                  className={styles.link}
+                  href='https://melo-inu.gitbook.io/whitepaper/'
+                  target='_blank'
+                >
+                 ENTER SHINTO
+                </Link>{' '}
+                 <b></b> <i></i>.
+              </p>
+              
+              <div className={styles.widgetContainer}>
+                <link rel="stylesheet" href="https://voltichange.net/css/widget.css" />
+                <iframe
+                  src="https://voltichange.net/api/widget/?chain=1&darktheme=false&tokenin=Native&tokenout=0x5c12C812794B874fe4Fdea9A4960df599C89b8E5&slippage=0.5"
+                  frameBorder="0"
+                  className={styles.voltiChangeWidget}
+                  width="400"
+                  height="500"
+                ></iframe>
+              </div>
+                
 
                 
           {
