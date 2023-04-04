@@ -18,7 +18,7 @@ const Rpc = () => {
             
         </div>
       <div>
-        <h2>Network Information</h2>
+        <h2>Add Meloreum Network Testnet</h2>
         <p>JSON-RPC Endpoint: {rpcEndpoint}</p>
         <p>Chain ID: {chainId}</p>
         <button onClick={() => {
