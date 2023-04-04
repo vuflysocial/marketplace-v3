@@ -24,8 +24,8 @@ export function Navbar() {
           </Link>
 
           <div className={styles.navMiddle}>
-          <Link href="/dashboard" className={styles.link}>
-              DashBoard
+          <Link href="/rpc" className="">
+              Rpc Url
             </Link>
           <Link href="/roadmap" className={styles.link}>
               RoadMap
@@ -39,12 +39,9 @@ export function Navbar() {
             <Link href="/music" className="">
               Music
             </Link>
-            <Link href="/rpc" className="">
-              Rpc Url
-            </Link>
             
             
-            
+           
             
           </div>
         </div>
@@ -69,3 +66,4 @@ export function Navbar() {
     </div>
   );
 }
+
