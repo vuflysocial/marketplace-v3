@@ -25,6 +25,9 @@ const Dashboard: NextPage = () => {
             </div>
             <div className={styles.buttonsContainer}>
               <div className={styles.buttons}>
+                <Link href="/rpc">
+                  <div className={styles.heroCta}>Meloreum Testnet RPC Info</div>
+                </Link>
                 <Link href="https://meloai.netlify.app/">
                   <div className={styles.heroCta}>Generate AI Images & use MeloGPT</div>
                 </Link>
