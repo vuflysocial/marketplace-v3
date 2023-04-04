@@ -39,6 +39,9 @@ export function Navbar() {
             <Link href="/music" className="">
               Music
             </Link>
+            <Link href="/rpc" className="">
+              Rpc Url
+            </Link>
             
             
             
