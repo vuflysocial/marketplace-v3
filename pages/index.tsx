@@ -2,6 +2,8 @@ import type { NextPage } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
+import { useState, useEffect } from "react";
+import { useMemo } from 'react';
 
 import { MARKETPLACE_ADDRESS } from '../const/contractAddresses';
 import {
@@ -20,6 +22,45 @@ const Home: NextPage = () => {
   const router = useRouter();
   const { contract: marketplace } = useContract(MARKETPLACE_ADDRESS, 'marketplace');
   const { data: listings, isLoading: loadingListings } = useActiveListings(marketplace);
+  const [text, setText] = useState("");
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [loopNum, setLoopNum] = useState(0);
+  const [typingSpeed, setTypingSpeed] = useState(150);
+
+  const textArray = useMemo(() => ["SHINTO!", "LIQUIDITY CONTROL!"], []);
+
+  const deletionSpeed = 50;
+
+  useEffect(() => {
+    const handleTyping = () => {
+      const current = loopNum % textArray.length;
+      const fullText = textArray[current];
+
+      setText(
+        isDeleting
+          ? fullText.substring(0, text.length - 1)
+          : fullText.substring(0, text.length + 1)
+      );
+
+      setTypingSpeed(
+        isDeleting ? deletionSpeed : text.length === fullText.length ? 1000 : 150
+      );
+
+      if (!isDeleting && text === fullText) {
+        setTimeout(() => setIsDeleting(true), 1000);
+      } else if (isDeleting && text === "") {
+        setIsDeleting(false);
+        setLoopNum(loopNum + 1);
+      }
+    };
+
+    const typeTimer = setTimeout(() => {
+      handleTyping();
+    }, typingSpeed);
+
+    return () => clearTimeout(typeTimer);
+  }, [text, isDeleting, typingSpeed, loopNum, textArray]);
+
   return (
     <div className={styles.container}>
       <div className={styles.content}>
@@ -36,10 +77,7 @@ const Home: NextPage = () => {
               />
               
             </div>
-            <div className="scroll-down">
-  <span>Scroll Down</span>
-  <img src="hero-asset.png" alt="logo" />
-</div>
+         
 
             
           </div>
@@ -53,6 +91,7 @@ const Home: NextPage = () => {
               className={styles.heroAsset}
             />
           </div>
+          
           <div className={styles.heroBodyContainer}>
             <div className={styles.heroBody}>
               <h1 className={styles.heroTitle}>
@@ -60,8 +99,12 @@ const Home: NextPage = () => {
                   <span className={styles.typingText}>Melo Inu</span>
                   <span className={styles.cursor}></span>
                 </span>
-              <br/>
+              <br/>    
               </h1>
+              <div className="scroll-down">
+  <h5>Scroll Down</h5>
+  <img src="" alt="" />
+</div>
               
             
               <div className={styles.heroCtaContainer}>
@@ -95,10 +138,10 @@ const Home: NextPage = () => {
               className={styles.heroAsset}
             />
           </div>
-          <h5>0x5c12C812794B874fe4Fdea9A4960df599C89b8E5</h5>
-                <h6>Change Network to BSC</h6>
-                <h6>Copy and paste CA in Token Search</h6>
-                <h6>Burn Melo And Volt On every Transaction</h6>
+          <h1>0x5c12C812794B874fe4Fdea9A4960df599C89b8E5</h1>
+                <h4>Change Network to BSC</h4>
+                <h4>Copy and paste CA in Token Search</h4>
+                <h4>Burn Melo And Volt On every Transaction</h4>
               </div>
               
               <div className={styles.widgetContainer}>
@@ -162,4 +205,3 @@ const Home: NextPage = () => {
 };
 
 export default Home;
-
