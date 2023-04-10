@@ -90,10 +90,10 @@ const Home: NextPage = () => {
               className={styles.heroAsset}
             />
           </div>
-          <h1>0x5c12C812794B874fe4Fdea9A4960df599C89b8E5</h1>
-                <h4>Change Network to BSC</h4>
-                <h4>Copy and paste CA in Token Search</h4>
-                <h4>Burn Melo And Volt On every Transaction</h4>
+          <h5>0x5c12C812794B874fe4Fdea9A4960df599C89b8E5</h5>
+                <h7>Change Network to BSC</h7>
+                <h7>Copy and paste CA in Token Search</h7>
+                <h7>Burn Melo And Volt On every Transaction</h7>
               </div>
               
               <div className={styles.widgetContainer}>
