@@ -91,9 +91,9 @@ const Home: NextPage = () => {
             />
           </div>
           <h5>0x5c12C812794B874fe4Fdea9A4960df599C89b8E5</h5>
-                <h7>Change Network to BSC</h7>
-                <h7>Copy and paste CA in Token Search</h7>
-                <h7>Burn Melo And Volt On every Transaction</h7>
+                <h6>Change Network to BSC</h6>
+                <h6>Copy and paste CA in Token Search</h6>
+                <h6>Burn Melo And Volt On every Transaction</h6>
               </div>
               
               <div className={styles.widgetContainer}>
