@@ -51,7 +51,7 @@ function thestory() {
               </p>
            </div>
 
-       <div>
+      
   <h5>
     Melo Inu was birthed on Canto Blockchain originally with a renounced contract and burned liquidity. 
     We chose Canto because it was a new private blockchain that encouraged developer building to help expand the network.
