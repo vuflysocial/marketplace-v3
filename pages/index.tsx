@@ -110,7 +110,7 @@ const Home: NextPage = () => {
               <div className={styles.heroCtaContainer}>
                 <Link
                   className={styles.secondaryCta}
-                  href="/dashboard"
+                  href=""
                   target="_blank"
                 >
                   Dashboard | Home
