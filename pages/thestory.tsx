@@ -49,26 +49,18 @@ function thestory() {
                 </Link>{' '}
                  <b></b> <i></i>.
               </p>
-          </div>
+           </div>
 
-        <h5>
-          Melo Inu was birthed on Canto Blockchain originally with a renounced contract and burned liquidity. 
-          We chose canto becuase it was a new private blockchain that encouraged developer building to help expand the network.
-          after 3 weeks of trading the community suggested moving over to BSC for more volume, seeing as though canto was a new chain, we decided to do so for the community.
-          Now, becuase the contract was renounced and liquid burned with no-upgradability we where forced to launched the same contract on BSC and airdrop CANTO holders the new BSC Address. So yes at this moment there is a Melo Inu Canto
-          contract as well as a BSC Contract.
-
-        </h5>
-        <h5>
-            MAI was the AI token in our ecosystem on CANTO that the community agreed apon sacrificing the liquidity to help us start the Melo Liquid Protocol
-            The Kami Shinto. All 15 original OG Holders from launch of MAI where snapshotted and will be Airdropped the Equivalent amount in SHINTO by 4/15.
-            Melo AI Dapp is Still live as Utility and can be accessed on the dashboard
-        </h5>
-        <h5>
-            As The Melo And Canto Ecosystem grow, eventualy so will Melo Canto. Melo Inu Canto will remain live on canto as a safe meme to turn to in the early stages of the canto network. We will find ways to inovate in every place we are.
-        </h5>
-        
-      </div>
+          <h5>
+  Melo Inu was birthed on Canto Blockchain originally with a renounced contract and burned liquidity. We chose Canto because it was a new private blockchain that encouraged developer building to help expand the network. After 3 weeks of trading, the community suggested moving over to BSC for more volume, seeing as though Canto was a new chain, we decided to do so for the community. Now, because the contract was renounced and liquidity burned with no-upgradability, we were forced to launch the same contract on BSC and airdrop CANTO holders the new BSC Address. So yes, at this moment, there is a Melo Inu Canto contract as well as a BSC Contract.
+</h5>
+<h5>
+  MAI was the AI token in our ecosystem on CANTO that the community agreed upon sacrificing the liquidity to help us start the Melo Liquid Protocol, the Kami Shinto. All 15 original OG Holders from the launch of MAI were snapshotted and will be Airdropped the Equivalent amount in SHINTO by 4/15. Melo AI Dapp is still live as utility and can be accessed on the dashboard.
+</h5>
+<h5>
+  As the Melo and Canto Ecosystem grow, eventually, so will Melo Canto. Melo Inu Canto will remain live on Canto as a safe meme to turn to in the early stages of the Canto network. We will find ways to innovate in every place we are.
+</h5> 
+</div>
     </Container>
   );
 }
