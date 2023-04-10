@@ -119,7 +119,7 @@ const Home: NextPage = () => {
               <div className={styles.heroCtaContainer}>
                 <Link
                   className={styles.secondaryCta}
-                  href="/dashboard"
+                  href="/https://melo-dashboard.vercel.app/"
                   target="_blank"
                 >
                   V1 Site | Home
