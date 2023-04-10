@@ -57,16 +57,7 @@ const Home: NextPage = () => {
                 </span>
               <br/>
               </h1>
-              <p className={styles.heroSubtitle}>
-                <Link
-                  className={styles.link}
-                  href='https://melo-inu.gitbook.io/whitepaper/'
-                  target='_blank'
-                >
-                 What if
-                </Link>{' '}
-                 <b></b> <i></i>.
-              </p>
+              
             
               <div className={styles.heroCtaContainer}>
                 <Link
@@ -166,5 +157,4 @@ const Home: NextPage = () => {
 };
 
 export default Home;
-
 
