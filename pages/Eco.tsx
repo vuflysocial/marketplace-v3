@@ -128,7 +128,7 @@ function Eco() {
       <div>
         <h1>SHINTO LIQUID REWARD PROTOCOL 🔥</h1>
         <br />
-        <h2>The Kami Shinto was designed to be the spirit of the ecosytem. At a sell tax of 20% and buy tax of 10% it allows us to incorporate our Rewards and donations aspect of the Melo inu
+        <h2>The Kami Shinto was designed to be the spirit of the ecosytem. At a sell tax of 5% and buy tax of 3% it allows us to incorporate our Rewards and donations aspect of the Melo inu
           ecosystem. Thus this action funnels more Liquid, Rewards tokens to give to holders for staking SHINTO, as well as a additional liquid for Donations and marketing. SHINTO will be the stream of water from 
           which melo will drink. Shinto will hold all staking vaults for the melo inu ecosystem, The Kami Spirit Vault.
         </h2>
