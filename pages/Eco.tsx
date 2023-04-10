@@ -4,7 +4,7 @@ import NextLink from 'next/link';
 import Image from 'next/image';
 
 const CountdownTimer = () => {
-  const [timeLeft, setTimeLeft] = useState(14400); // in seconds
+  const [timeLeft, setTimeLeft] = useState(1000); // in seconds
   useEffect(() => {
     const timer = setInterval(() => {
       setTimeLeft((prevTime) => prevTime - 1);
@@ -12,7 +12,7 @@ const CountdownTimer = () => {
     return () => clearInterval(timer);
   }, []);
 
-  const progress = ((14400 - timeLeft) / 14400) * 100; // percentage
+  const progress = ((0 - timeLeft) / 1000) * 100; // percentage
 
   return (
     <div>
@@ -44,7 +44,7 @@ function Eco() {
         </div>
       </NextLink>
       <br />
-      <NextLink href="/">
+      <NextLink href="/ ">
         <div style={{ display: "flex", alignItems: "center" }}>
           <button style={{ marginRight: "10px" }}>Kami Shinto</button>
           <Image src="https://i.postimg.cc/MHqPg3my/BINK-2.png" alt="Melo Inu" width={100} height={100} />
@@ -68,9 +68,9 @@ function Eco() {
       <CountdownTimer /> {/* added countdown timer */}
       <br />
       
-        <h1>KAMI SHINTO | SPIRIT</h1>
-      <button style={{ fontSize: '20px', padding: '10px 20px', borderRadius: '5px', backgroundColor: '#FF0000', color: 'white' }} onClick={() => window.location.href='https://www.example.com'}>
-        Chart
+        <h1>KAMI SHINTO | SPIRIT 0xc42a67C3D7D5E387168b72Ccc555ee61838c7e33</h1>
+      <button style={{ fontSize: '20px', padding: '10px 20px', borderRadius: '5px', backgroundColor: '#FF0000', color: 'white' }} onClick={() => window.location.href='https://poocoin.app/tokens/0xc42a67c3d7d5e387168b72ccc555ee61838c7e33'}>
+        Chart 
       </button>
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         <img src="/R.gif" alt="Your Image Description" />
@@ -110,8 +110,8 @@ function Eco() {
         <h2>TAX</h2>
         <p>The token will be distributed as follows:</p>
         <ul>
-          <li>10% - Buy Tax</li>
-          <li>20% - Sale Tax</li>
+          <li>3% - Buy Tax</li>
+          <li>5% - Sale Tax</li>
           
         </ul>
         <h2>Token Usage</h2>
