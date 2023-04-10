@@ -10,11 +10,12 @@ function thestory() {
       <div>
         <h1>The Original Story</h1>
         <h4>
-        What if the roles were reversed and Shiba Inu was a cat?
-         Meet MELO INU, a clone of Shiba Inu, created with a twist,
-         he's a cat!...
-        to continue reading the story of Melo Inu 
-        </h4>
+  What if the roles were reversed and Shiba Inu was a cat?
+  Meet MELO INU, a clone of Shiba Inu, created with a twist,
+  he&apos;s a cat!...
+  To continue reading the story of Melo Inu
+</h4>
+
         <p className={styles.heroSubtitle}>
                 <Link
                   className={styles.link}
