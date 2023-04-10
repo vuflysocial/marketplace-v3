@@ -77,29 +77,46 @@ const Home: NextPage = () => {
                   Dashboard | Home
                 </Link>
               </div>
-              <div className="main">
-              <p className={styles.heroSubtitle}>
+              <div className={styles.heroCtaContainer}>
                 <Link
-                  className={styles.link}
-                  href='https://melo-inu.gitbook.io/whitepaper/'
-                  target='_blank'
+                  className={styles.secondaryCta}
+                  href="/dashboard"
+                  target="_blank"
                 >
-                 ENTER SHINTO
-                </Link>{' '}
-                 <b></b> <i></i>.
-              </p>
+                  V1 Site | Home
+                </Link>
+              </div>
+              <div className="main">
+              <div>
+                <h1>Voltichange</h1>
+                <div className={styles.heroAssetFrame}>
+            <Image
+              src='/volt.png'
+              width={360}
+              height={340}
+              alt='Hero asset, NFT marketplace'
+              quality={100}
+              className={styles.heroAsset}
+            />
+          </div>
+          <h1>0x5c12C812794B874fe4Fdea9A4960df599C89b8E5</h1>
+                <h4>Change Network to BSC</h4>
+                <h4>Copy and paste CA in Token Search</h4>
+                <h4>Burn Melo And Volt On every Transaction</h4>
+              </div>
               
               <div className={styles.widgetContainer}>
                 <link rel="stylesheet" href="https://voltichange.net/css/widget.css" />
                 <iframe
-                  src="https://voltichange.net/api/widget/?chain=1&darktheme=false&tokenin=Native&tokenout=0x5c12C812794B874fe4Fdea9A4960df599C89b8E5&slippage=0.5"
+                  src="https://voltichange.net/api/widget/?chain=56&darktheme=false&tokenin=Native&tokenout=0x5c12C812794B874fe4Fdea9A4960df599C89b8E5&slippage=0.5"
                   frameBorder="0"
                   className={styles.voltiChangeWidget}
                   width="400"
-                  height="500"
+                  height="650"
                 ></iframe>
               </div>
-                
+
+              
 
                 
           {
