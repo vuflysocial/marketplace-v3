@@ -1,5 +1,5 @@
 import { NextPage } from "next";
-import styles from '../styles/melonomics.module.css';
+import styles from '../styles/tokenomics.module.css';
 import Container from "../components/Container/Container";
 import Link from 'next/link';
 import Image from 'next/image';
