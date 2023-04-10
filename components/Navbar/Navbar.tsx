@@ -24,14 +24,14 @@ export function Navbar() {
           </Link>
 
           <div className={styles.navMiddle}>
-          <Link href="/rpc" className="">
-              Rpc Url
-            </Link>
-          <Link href="/roadmap" className={styles.link}>
-              RoadMap
+          <Link href="/thestory" className="">
+              The Story
             </Link>
           <Link href="/Eco" className={styles.link}>
               Eco
+            </Link>
+            <Link href="/roadmap" className={styles.link}>
+              RoadMap
             </Link>
           <Link href="/melonomics" className="">
               Melonomics
